@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "yHcucDzX15k6lOF4qCYO5vsam7+0EOXYkV2XFQ/l6C7OLTeFrResITbFm0Wepo4gQnZWvQycGQfwBF5iVtR9uA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\regul\\OneDrive\\Documents\\Code\\FSharp\\2023AdventOfCode\\2023AdventOfCode.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\regul\\.nuget\\packages\\fsharp.core\\8.0.100\\fsharp.core.8.0.100.nupkg.sha512"
+  ],
+  "logs": []
+}
