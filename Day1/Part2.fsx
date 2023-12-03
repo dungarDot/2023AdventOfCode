@@ -31,7 +31,7 @@ let getNumberFromString (input:string) =
     numbers
     |> List.collect(fun number ->
         [   { Index = input.IndexOf number; Value = number} 
-            { Index = input.IndexOf number; Value = number} ] )
+            { Index = input.LastIndexOf number; Value = number} ] )
     |> List.filter(fun indexes -> indexes.Index >= 0)
     |> List.sortBy _.Value
     
@@ -48,8 +48,8 @@ let getNumberFromCharacter (input:string) =
 let result =
     inputData
     |> Seq.map( fun line ->
-        getNumberFromWord line @ getNumberFromCharacter line
-        // getNumberFromWord line @ getNumberFromString line
+        // getNumberFromWord line @ getNumberFromCharacter line
+        getNumberFromWord line @ getNumberFromString line
         |> List.sortBy _.Index
         |> fun indexes -> (List.head indexes).Value + (List.last indexes).Value |> int )
     |> Seq.toList
